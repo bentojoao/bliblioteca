@@ -1,6 +1,9 @@
+#biblioteca principal
 from bibliotreca import Biblioteca
-import datetime
 
-test = datetime.datetime.today()
-teste = str(test + datetime.timedelta(days=7))
-print()
+lib = Biblioteca()
+#lib.adicionar('assim que acaba', 'romance', 358)
+lib.estante()
+#lib.emprestimo('joão', 'assim que acaba')
+print('-' * 10)
+lib.devolucao()

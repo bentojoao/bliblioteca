@@ -8,4 +8,4 @@ class ITlivro:
 
 class ITemprestimno:
     def table(self, a, b, c=tempo2(), d=tempo()):
-        return f"insert into imprestimo(cliente, produto, pegou, devolver) values('{a}', '{b}', '{c}', '{d}');"
+        return f"insert into emprestimo(cliente, produto, pegou, devolver) values('{a}', '{b}', '{c}', '{d}');"

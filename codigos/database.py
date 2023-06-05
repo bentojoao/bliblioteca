@@ -27,11 +27,15 @@ class Dbase:
         b = a.cursor()
         if self.tabela == 'livro':
             c = self.Interface.ILivro().table()
+            b.execute(c)
+            for i in b:
+                for co in i:
+                    print(co)
         elif self.tabela == 'emprestimo':
             c = self.Interface.IEmprestimo().table()
-        b.execute(c)
-        for i in b:
-            for co in i:
-                print(co)
+            b.execute(c)
+            for i in b:
+                for co in i:
+                    print(co)
         b.close()
         a.close()

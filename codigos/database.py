@@ -5,7 +5,7 @@ import interface_select
 
 class Dbase:
     def __init__(self, tab):
-        self._conector = mysql.connector.connect(user='root', host='seuhost', password='suasenha', database='seubancodedados')
+        self._conector = mysql.connector.connect(user='seuusuario', host='seuhost', password='suasenha', database='seubancodedados')
         self.tabela = tab
         self.interface = interface_insert
         self.Interface = interface_select
